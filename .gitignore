@@ -1,0 +1,24 @@
+# Dependências e ferramentas locais
+node_modules/
+.chrome-cdp/
+.agents/
+skills-lock.json
+
+# Versão antiga preservada localmente
+_legado-v22/
+
+# Screenshots de preview (só uso local)
+/*.png
+
+# Briefing interno
+BRIEF_PREMIUM.md
+
+# Originais pesados de imagem (o site usa as versões otimizadas)
+assets/Equipe campo.png
+assets/logo-clean/
+assets/logo-agroserro-branca-transparente-provisoria.png
+assets/logo-agroserro-simbolo-transparente-provisorio.png
+assets/agroserro-logo-oficial-crop.png
+assets/agroserro-logo-oficial.jpg
+assets/logo-agroserro-oficial.png
+assets/agroserro-logo.svg
