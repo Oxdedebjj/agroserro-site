@@ -10,8 +10,9 @@ _legado-v22/
 # Screenshots de preview (só uso local)
 /*.png
 
-# Briefing interno
+# Briefing e instruções internas (repo é público)
 BRIEF_PREMIUM.md
+CLAUDE.md
 
 # Originais pesados de imagem (o site usa as versões otimizadas)
 assets/Equipe campo.png
