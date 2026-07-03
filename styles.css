@@ -386,6 +386,15 @@ a:focus-visible, button:focus-visible {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: var(--s-4);
 }
+.post-empty {
+  grid-column: 1 / -1;
+  padding: var(--s-6);
+  text-align: center;
+  color: var(--stone);
+  font-size: 1.05rem;
+  background: var(--sand);
+  border-radius: var(--radius-lg);
+}
 .post-card {
   overflow: hidden;
   background: #fff;

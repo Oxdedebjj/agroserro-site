@@ -6,11 +6,25 @@
   1. Copie este arquivo para "artigos/{slug-do-titulo}.html" (minúsculo, sem acento, palavras separadas por hífen).
   2. Substitua todos os campos {{ENTRE_CHAVES}} abaixo.
   3. Escreva o corpo do artigo em {{CORPO_HTML}} usando parágrafos <p>, e <h2> para subtítulos, se precisar.
-  4. Adicione um card na página coluna.html: copie o bloco <article class="post-card reveal">...</article>
-     de um artigo existente e cole logo abaixo do comentário "NOVO-ARTIGO", ajustando link, imagem, título,
-     resumo, tag e data.
-  5. Se houver foto do tema, otimize para largura ~1140px (JPG, qualidade ~80) e referencie em {{IMAGEM_CAPA}}.
+  4. Se houver foto do tema, otimize para largura ~1140px (JPG, qualidade ~80) e referencie em {{IMAGEM_CAPA}}.
      Sem foto, pode omitir a seção <figure class="post-cover">.
+  5. Adicione um card em coluna.html: na div class="post-grid", logo abaixo do comentário "NOVO-ARTIGO"
+     (e antes do <p class="post-empty">, que deve ser removido assim que houver pelo menos um artigo),
+     cole o bloco abaixo com os mesmos dados preenchidos:
+
+     <article class="post-card reveal">
+       <a class="post-card-link" href="artigos/{{SLUG}}.html">
+         <div class="post-media">
+           <img src="{{IMAGEM_CAPA}}" alt="{{TEXTO_ALTERNATIVO_IMAGEM}}" loading="lazy">
+         </div>
+         <div class="post-body">
+           <span class="post-tag">{{CATEGORIA}}</span>
+           <h2>{{TITULO}}</h2>
+           <p>{{RESUMO}}</p>
+           <span class="post-meta"><time datetime="{{DATA_ISO}}">{{DATA_EXIBICAO}}</time> · Agroserro</span>
+         </div>
+       </a>
+     </article>
 -->
 <!doctype html>
 <html lang="pt-BR">
