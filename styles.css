@@ -380,6 +380,87 @@ a:focus-visible, button:focus-visible {
 }
 .link-cta:hover { color: var(--field-deep); border-bottom-color: var(--field-deep); }
 
+/* ============ Coluna — listagem de artigos ============ */
+
+.post-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-4);
+}
+.post-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(8, 124, 159, 0.35);
+}
+.post-card-link { display: flex; flex-direction: column; height: 100%; color: inherit; }
+.post-media { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: var(--petrol-deep); }
+.post-media img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.post-card:hover .post-media img { transform: scale(1.04); }
+.post-body { display: flex; flex-direction: column; gap: 0.6rem; padding: var(--s-4); flex: 1; }
+.post-tag {
+  align-self: flex-start;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(8, 124, 159, 0.09);
+  color: var(--petrol);
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+.post-body h2 { font-size: 1.2rem; line-height: 1.2; }
+.post-body p { color: var(--stone); font-size: 0.93rem; flex: 1; }
+.post-meta { font-size: 0.8rem; color: var(--stone); font-variant-numeric: tabular-nums; }
+
+/* ============ Coluna — página de artigo ============ */
+
+.post-article { padding-block: var(--s-6) var(--s-8); }
+.post-article-inner { max-width: 42rem; }
+.post-back {
+  display: inline-block; margin-bottom: var(--s-4);
+  font-size: 0.88rem; font-weight: 600; color: var(--petrol);
+}
+.post-back:hover { color: var(--petrol-deep); }
+.post-article h1 {
+  margin: var(--s-3) 0 var(--s-3);
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
+  line-height: 1.08; letter-spacing: -0.01em;
+}
+.post-lead { font-size: 1.1rem; line-height: 1.65; color: var(--stone); margin-bottom: var(--s-2); }
+.post-article .post-meta { margin-bottom: var(--s-5); display: block; }
+.post-cover {
+  margin: 0 0 var(--s-6);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.post-cover img { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: cover; }
+.post-content { display: grid; gap: var(--s-3); }
+.post-content p { color: var(--ink); font-size: 1.05rem; line-height: 1.75; }
+.post-content h2 {
+  margin-top: var(--s-3);
+  font-size: 1.5rem; line-height: 1.2; letter-spacing: -0.01em;
+  color: var(--petrol-deep);
+}
+.post-cta {
+  margin-top: var(--s-6);
+  padding: var(--s-5);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-3);
+  background: var(--sand);
+  border-radius: var(--radius-lg);
+}
+.post-cta p { font-weight: 600; color: var(--petrol-deep); font-size: 1.05rem; }
+
 /* ============ Quem somos ============ */
 
 .about-grid {
@@ -635,6 +716,7 @@ a:focus-visible, button:focus-visible {
   .cred-grid > div:nth-child(odd) { border-left: 0; padding-left: 0; }
   .section { padding-block: var(--s-7); }
   .service-grid { grid-template-columns: repeat(2, 1fr); }
+  .post-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: var(--s-6); }
   .partners-card { max-width: 30rem; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-4) 0; }
@@ -679,6 +761,9 @@ a:focus-visible, button:focus-visible {
   .section { padding-block: var(--s-6); }
   .service-grid { grid-template-columns: 1fr; }
   .service-body { padding: var(--s-4); }
+  .post-grid { grid-template-columns: 1fr; }
+  .post-body { padding: var(--s-4); }
+  .post-cta { padding: var(--s-4); }
   .partners-card { padding: var(--s-4); }
   .stats-grid { grid-template-columns: 1fr; gap: var(--s-4); padding-block: var(--s-5); }
   .stats-grid > div { border-left: 0; padding-inline: 0; }
