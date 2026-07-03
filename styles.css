@@ -358,26 +358,6 @@ a:focus-visible, button:focus-visible {
   transition: transform 0.5s ease;
 }
 .service-card:hover .service-media img { transform: scale(1.04); }
-.service-media.placeholder {
-  display: grid; place-items: center;
-  background:
-    radial-gradient(circle at 22% 25%, rgba(8, 124, 159, 0.35), transparent 55%),
-    radial-gradient(circle at 82% 80%, rgba(92, 150, 51, 0.3), transparent 50%),
-    linear-gradient(155deg, var(--petrol-deep), #123f52 65%, #1c3d28);
-}
-.service-media.placeholder::before {
-  content: ""; position: absolute; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='340' viewBox='0 0 340 340'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.12' stroke-width='1.3'%3E%3Cpath d='M-20 240 C 60 190 150 230 250 180 S 380 140 410 130'/%3E%3Cpath d='M-20 270 C 80 220 170 260 270 210 S 400 170 430 160'/%3E%3Cpath d='M-20 90 C 60 50 150 100 250 60 S 380 20 410 10'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 340px 340px;
-}
-.service-media.placeholder span {
-  position: relative;
-  padding: 0.5rem 1rem;
-  border: 1px dashed rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.8);
-}
 .service-body { display: flex; flex-direction: column; gap: var(--s-3); padding: var(--s-5); flex: 1; }
 .service-tag {
   align-self: flex-start;
