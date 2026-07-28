@@ -2,7 +2,7 @@
 
 Site institucional da Agroserro — consultoria agropecuária e engenharia rural no Serro/MG.
 
-**Publicado em:** https://oxdedebjj.github.io/agroserro-site/
+**Publicado em:** https://agroserro.com.br/
 
 ## Stack
 
