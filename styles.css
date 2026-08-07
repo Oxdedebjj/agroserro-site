@@ -3,6 +3,31 @@
    Conceito: Terra + Precisão, ancorado no azul-petróleo da marca
    ============================================================ */
 
+/* Fontes locais: elimina a folha CSS externa do Google Fonts e mantém a identidade visual. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("assets/fonts/inter-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+  src: url("assets/fonts/fraunces-latin-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/fraunces-latin-italic.woff2") format("woff2");
+}
+
 :root {
   /* --- Cores da marca (extraídas do símbolo oficial) --- */
   --petrol: #087c9f;        /* azul-petróleo oficial — engrenagem */

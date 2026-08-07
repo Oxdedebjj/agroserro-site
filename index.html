@@ -22,11 +22,11 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://agroserro.com.br/assets/thumbnail-social.jpg">
   <title>Agroserro | Georreferenciamento, Topografia, Crédito Rural e Ambiental em Serro/MG</title>
-  <link rel="icon" href="assets/simbolo-192.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="icon" href="assets/optimized/simbolo-64.webp" type="image/webp">
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=26">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -80,7 +80,7 @@
   <header class="site-header" data-header>
     <nav class="nav container" aria-label="Navegação principal">
       <a class="brand" href="#inicio" aria-label="Agroserro, início">
-        <img src="assets/simbolo-192.png" alt="" width="44" height="44">
+        <img src="assets/optimized/simbolo-64.webp" alt="" width="44" height="44" decoding="async">
         <span class="brand-text">AGROSERRO<small>Soluções Agropecuárias</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
@@ -105,7 +105,7 @@
     <!-- ============ HERO ============ -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="hero-inner container">
-        <div class="hero-copy reveal">
+        <div class="hero-copy">
           <p class="kicker">Serro · Serra do Espinhaço · Minas Gerais</p>
           <h1 id="hero-title">Do campo ao cartório, o seu imóvel <em>resolvido</em>.</h1>
           <p class="lead">Georreferenciamento, topografia rural e urbana, crédito rural, laudos técnicos e regularização ambiental, com a responsabilidade de dois engenheiros agrônomos registrados no CREA-MG.</p>
@@ -119,10 +119,13 @@
           <p class="hero-note">Atendimento no Serro/MG e região com resposta direta da equipe técnica.</p>
         </div>
 
-        <figure class="hero-media reveal">
+        <figure class="hero-media">
           <div class="photo-frame">
             <i class="tick" aria-hidden="true"></i><i class="tick" aria-hidden="true"></i><i class="tick" aria-hidden="true"></i><i class="tick" aria-hidden="true"></i>
-            <img src="assets/equipe-campo-900.jpg" srcset="assets/equipe-campo-900.jpg 900w, assets/equipe-campo-1600.jpg 1600w" sizes="(max-width: 1024px) 100vw, 45vw" alt="Equipe da Agroserro em campo com GPS geodésico, na Serra do Espinhaço" fetchpriority="high">
+            <picture>
+              <source type="image/webp" srcset="assets/optimized/equipe-campo-400.webp 400w, assets/optimized/equipe-campo-640.webp 640w, assets/optimized/equipe-campo-900.webp 900w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) 45vw, 520px">
+              <img src="assets/equipe-campo-900.jpg" srcset="assets/equipe-campo-900.jpg 900w, assets/equipe-campo-1600.jpg 1600w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) 45vw, 520px" width="900" height="675" alt="Equipe da Agroserro em campo com GPS geodésico, na Serra do Espinhaço" decoding="async" fetchpriority="high">
+            </picture>
             <div class="hero-badge">
               <strong>+200</strong>
               <span>imóveis certificados<br>junto ao INCRA</span>
@@ -155,7 +158,10 @@
         <div class="service-grid">
           <article class="service-card reveal">
             <div class="service-media">
-              <img src="assets/servico-georreferenciamento-760.jpg" srcset="assets/servico-georreferenciamento-760.jpg 760w, assets/servico-georreferenciamento-1140.jpg 1140w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Técnico com GPS geodésico medindo divisa de imóvel rural na Serra do Espinhaço" loading="lazy">
+              <picture>
+                <source type="image/webp" srcset="assets/optimized/servico-georreferenciamento-400.webp 400w, assets/optimized/servico-georreferenciamento-760.webp 760w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px">
+                <img src="assets/servico-georreferenciamento-760.jpg" srcset="assets/servico-georreferenciamento-760.jpg 760w, assets/servico-georreferenciamento-1140.jpg 1140w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px" width="760" height="506" alt="Técnico com GPS geodésico medindo divisa de imóvel rural na Serra do Espinhaço" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="service-body">
               <span class="service-tag">Rural · INCRA</span>
@@ -167,7 +173,10 @@
 
           <article class="service-card reveal">
             <div class="service-media">
-              <img src="assets/servico-topografia-760.jpg" srcset="assets/servico-topografia-760.jpg 760w, assets/servico-topografia-1140.jpg 1140w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Equipe técnica realizando levantamento topográfico em área de loteamento urbano" loading="lazy">
+              <picture>
+                <source type="image/webp" srcset="assets/optimized/servico-topografia-400.webp 400w, assets/optimized/servico-topografia-760.webp 760w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px">
+                <img src="assets/servico-topografia-760.jpg" srcset="assets/servico-topografia-760.jpg 760w, assets/servico-topografia-1140.jpg 1140w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px" width="760" height="506" alt="Equipe técnica realizando levantamento topográfico em área de loteamento urbano" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="service-body">
               <span class="service-tag">Rural e urbano</span>
@@ -179,7 +188,10 @@
 
           <article class="service-card reveal">
             <div class="service-media">
-              <img src="assets/servico-credito-760.jpg" srcset="assets/servico-credito-760.jpg 760w, assets/servico-credito-1140.jpg 1140w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Consultor da Agroserro apresentando projeto de crédito rural ao produtor" loading="lazy">
+              <picture>
+                <source type="image/webp" srcset="assets/optimized/servico-credito-400.webp 400w, assets/optimized/servico-credito-760.webp 760w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px">
+                <img src="assets/servico-credito-760.jpg" srcset="assets/servico-credito-760.jpg 760w, assets/servico-credito-1140.jpg 1140w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px" width="760" height="506" alt="Consultor da Agroserro apresentando projeto de crédito rural ao produtor" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="service-body">
               <span class="service-tag">Produtor rural</span>
@@ -191,7 +203,10 @@
 
           <article class="service-card reveal">
             <div class="service-media">
-              <img src="assets/servico-consultoria-760.jpg" srcset="assets/servico-consultoria-760.jpg 760w, assets/servico-consultoria-1140.jpg 1140w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Engenheiro agrônomo avaliando amostra de solo em pastagem com o produtor" loading="lazy">
+              <picture>
+                <source type="image/webp" srcset="assets/optimized/servico-consultoria-400.webp 400w, assets/optimized/servico-consultoria-760.webp 760w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px">
+                <img src="assets/servico-consultoria-760.jpg" srcset="assets/servico-consultoria-760.jpg 760w, assets/servico-consultoria-1140.jpg 1140w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px" width="760" height="506" alt="Engenheiro agrônomo avaliando amostra de solo em pastagem com o produtor" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="service-body">
               <span class="service-tag">Produtor rural</span>
@@ -203,7 +218,10 @@
 
           <article class="service-card reveal">
             <div class="service-media">
-              <img src="assets/servico-laudos-760.jpg" srcset="assets/servico-laudos-760.jpg 760w, assets/servico-laudos-1140.jpg 1140w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Técnico elaborando laudo de avaliação de imóvel rural no local" loading="lazy">
+              <picture>
+                <source type="image/webp" srcset="assets/optimized/servico-laudos-400.webp 400w, assets/optimized/servico-laudos-760.webp 760w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px">
+                <img src="assets/servico-laudos-760.jpg" srcset="assets/servico-laudos-760.jpg 760w, assets/servico-laudos-1140.jpg 1140w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px" width="760" height="506" alt="Técnico elaborando laudo de avaliação de imóvel rural no local" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="service-body">
               <span class="service-tag">Bancos · Justiça · Cartório</span>
@@ -215,7 +233,10 @@
 
           <article class="service-card reveal">
             <div class="service-media">
-              <img src="assets/servico-ambiental-760.jpg" srcset="assets/servico-ambiental-760.jpg 760w, assets/servico-ambiental-1140.jpg 1140w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Técnica avaliando área de preservação e nascente com tablet para regularização ambiental" loading="lazy">
+              <picture>
+                <source type="image/webp" srcset="assets/optimized/servico-ambiental-400.webp 400w, assets/optimized/servico-ambiental-760.webp 760w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px">
+                <img src="assets/servico-ambiental-760.jpg" srcset="assets/servico-ambiental-760.jpg 760w, assets/servico-ambiental-1140.jpg 1140w" sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 40px - 24px) / 2), 400px" width="760" height="506" alt="Técnica avaliando área de preservação e nascente com tablet para regularização ambiental" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="service-body">
               <span class="service-tag">Regularização</span>
@@ -246,7 +267,10 @@
           <div class="partners-grid">
             <article class="partner-card">
               <div class="partner-photo">
-                <img src="assets/perfil-andre-560.jpg" srcset="assets/perfil-andre-560.jpg 560w, assets/perfil-andre-840.jpg 840w" sizes="(max-width: 640px) 45vw, (max-width: 1024px) 220px, 200px" alt="André Magalhães Freire Campos, engenheiro agrônomo da Agroserro" loading="lazy">
+                <picture>
+                  <source type="image/webp" srcset="assets/optimized/perfil-andre-320.webp 320w" sizes="(max-width: 640px) 45vw, (max-width: 1024px) 220px, 200px">
+                  <img src="assets/perfil-andre-560.jpg" srcset="assets/perfil-andre-560.jpg 560w, assets/perfil-andre-840.jpg 840w" sizes="(max-width: 640px) 45vw, (max-width: 1024px) 220px, 200px" width="560" height="700" alt="André Magalhães Freire Campos, engenheiro agrônomo da Agroserro" loading="lazy" decoding="async">
+                </picture>
               </div>
               <div class="partner-info">
                 <strong>André Magalhães Freire Campos</strong>
@@ -256,7 +280,10 @@
             </article>
             <article class="partner-card">
               <div class="partner-photo">
-                <img src="assets/perfil-vitor-560.jpg" srcset="assets/perfil-vitor-560.jpg 560w, assets/perfil-vitor-840.jpg 840w" sizes="(max-width: 640px) 45vw, (max-width: 1024px) 220px, 200px" alt="Vitor Gonçalves e Figueiredo, engenheiro agrônomo da Agroserro" loading="lazy">
+                <picture>
+                  <source type="image/webp" srcset="assets/optimized/perfil-vitor-320.webp 320w" sizes="(max-width: 640px) 45vw, (max-width: 1024px) 220px, 200px">
+                  <img src="assets/perfil-vitor-560.jpg" srcset="assets/perfil-vitor-560.jpg 560w, assets/perfil-vitor-840.jpg 840w" sizes="(max-width: 640px) 45vw, (max-width: 1024px) 220px, 200px" width="560" height="700" alt="Vitor Gonçalves e Figueiredo, engenheiro agrônomo da Agroserro" loading="lazy" decoding="async">
+                </picture>
               </div>
               <div class="partner-info">
                 <strong>Vitor Gonçalves e Figueiredo</strong>
@@ -423,7 +450,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a class="brand" href="#inicio" aria-label="Agroserro, início">
-          <img src="assets/simbolo-192.png" alt="" width="38" height="38">
+          <img src="assets/optimized/simbolo-64.webp" alt="" width="38" height="38" decoding="async">
           <span class="brand-text">AGROSERRO<small>Soluções Agropecuárias</small></span>
         </a>
         <p>Engenharia agronômica, medição e regularização no Serro/MG e região, com registro no CREA-MG.</p>
