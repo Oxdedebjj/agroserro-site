@@ -694,7 +694,7 @@ a:focus-visible, button:focus-visible {
 }
 .footer-brand p { margin-top: var(--s-3); font-size: 0.88rem; color: var(--stone); max-width: 22rem; }
 .footer .brand img { width: 38px; height: 38px; }
-.footer .brand-text { font-size: 1.05rem; }
+.footer .brand-text { font-size: 1.05rem; color: var(--petrol-deep); }
 .footer-nav { display: grid; gap: 0.55rem; align-content: start; font-size: 0.92rem; font-weight: 500; }
 .footer-nav a { color: var(--ink); transition: color 0.2s ease; }
 .footer-nav a:hover { color: var(--petrol); }
